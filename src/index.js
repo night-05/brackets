@@ -1,5 +1,4 @@
 module.exports = function check(str, bracketsConfig) {
-   
     let brackets = bracketsConfig.join('').replace(/,/g, '');
         let stack = [];
     for (let bracket of str) {
@@ -24,5 +23,4 @@ module.exports = function check(str, bracketsConfig) {
             
         }
         return stack.length === 0
-    
 }
